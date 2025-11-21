@@ -6,8 +6,9 @@ using UnityEngine.InputSystem;
 // The following components are needed: Player Input
 
 [RequireComponent(typeof(Rigidbody2D), typeof(CapsuleCollider2D))]
+
 public class TopDownMovement : MonoBehaviour
-{
+{       
     public float maxSpeed = 7;
     
     public bool controlEnabled { get; set; } = true;    // You can edit this variable from Unity Events
@@ -40,7 +41,8 @@ public class TopDownMovement : MonoBehaviour
         {
             rb.linearVelocity = Vector2.zero;
         }
-        
+    
+      
         // Write code for walking animation here. (Suggestion: send your current velocity into the Animator for both the x- and y-axis.)
     }
     
